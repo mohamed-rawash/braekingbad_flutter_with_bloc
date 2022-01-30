@@ -9,7 +9,7 @@ class Character {
   late List<dynamic> appearance;
   late String actorName;
 
-  Character.fromJason(Map<String, dynamic> json){
+  Character.fromJson(Map<String, dynamic> json){
     charId = json['char_id'];
     name = json['name'];
     birthday = json['birthday'];
