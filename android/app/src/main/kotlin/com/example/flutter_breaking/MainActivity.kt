@@ -1,4 +1,4 @@
-package com.example.breaking_flutter
+package com.example.flutter_breaking
 
 import io.flutter.embedding.android.FlutterActivity
 

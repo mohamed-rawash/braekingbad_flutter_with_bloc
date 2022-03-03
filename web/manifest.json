@@ -1,6 +1,6 @@
 {
-    "name": "breaking_flutter",
-    "short_name": "breaking_flutter",
+    "name": "flutter_breaking",
+    "short_name": "flutter_breaking",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

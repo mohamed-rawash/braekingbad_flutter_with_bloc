@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(breaking_flutter LANGUAGES CXX)
+project(flutter_breaking LANGUAGES CXX)
 
-set(BINARY_NAME "breaking_flutter")
+set(BINARY_NAME "flutter_breaking")
 
 cmake_policy(SET CMP0063 NEW)
 

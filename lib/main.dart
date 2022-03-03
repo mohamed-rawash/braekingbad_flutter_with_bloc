@@ -1,25 +1,22 @@
-import 'package:bloc/bloc.dart';
-import 'package:breaking_flutter/businees_logic/bloc/bloc_observer.dart';
 import 'package:flutter/material.dart';
-
 import 'app_router.dart';
 
 void main() {
-  BlocOverrides.runZoned(
-    (){},
-    blocObserver: SimpleBlocObserver(),
-  );
-  runApp(const BreakingBadApp());
+  runApp(BreakingBadApp(
+    appRouter: AppRouter(),
+  ));
 }
 
 class BreakingBadApp extends StatelessWidget {
-   const BreakingBadApp({Key? key}) : super(key: key);
+  final AppRouter appRouter;
+
+  const BreakingBadApp({Key? key, required this.appRouter}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      onGenerateRoute: AppRouter().generateRoute,
+      onGenerateRoute: appRouter.generateRoute,
     );
   }
 }
